@@ -1,13 +1,45 @@
+/* custom.css */
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f9fa;
+  font-family: 'Tajawal', sans-serif; /* Use a nice Arabic font */
+}
+
+#sidebar-wrapper {
+  width: 250px;
+  height: 100vh;
+}
+
+.sidebar-heading {
+  padding: 1rem 1.25rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.flex-grow-1 {
+  padding-left: 250px; /* Adjust content padding to account for sidebar width */
+}
+
+.navbar-brand, .nav-link {
+  font-size: 1.1rem;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
